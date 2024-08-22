@@ -6,13 +6,13 @@ function Comments(props:any  ){
     const [comments,setComments] = useState([]);
     useEffect(() => {
       async function run(){
-      await axios.get(`http://localhost:3030/comments/${urlprop}/${props.comments}`).then(response=>setComments(response.data.comments))
+      await axios.get(`https://backend-vagante.onrender.com/comments/${urlprop}/${props.comments}`).then(response=>setComments(response.data.comments))
     
     }
     run()
   }, []);
   function saveComment(){
-  axios.post(`http://localhost:3030/addcomment/${urlprop}`,{nome:addComments[0], comentario:addComments[1],post:0})
+  axios.post(`https://backend-vagante.onrender.com/addcomment/${urlprop}`,{nome:addComments[0], comentario:addComments[1],post:0})
   }
     
     return(<>
