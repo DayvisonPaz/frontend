@@ -15,8 +15,8 @@ return(< >
 <section className="px-10 pt-32 w-4/5 m-auto backdrop-blur-none mb-20">
 
     <div className="grid lg:grid-cols-2 items-center justify-items-center gap-5">
-        <div className="order-1 lg:order-1 shadow-2xl ">
-            <img className="h-80 w-80 object-cover lg:w-[500px] lg:h-[500px] " src="https://images.unsplash.com/photo-1581382575275-97901c2635b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxtYW58ZW58MHwxfHx8MTcxMzA4OTE0OHww&ixlib=rb-4.0.3&q=80&w=1080" alt="" />
+        <div className="">
+            <img className="h-80 w-80 object-cover lg:w-[500px] lg:h-[500px] rounded-full" src="../src/assets/profilepic.png" alt="" />
         </div>
         <div className="order-2 lg:order-2  flex flex-col justify-center lg:items-start text-center sm:text-left ">
             <p className="mt-2 text-3xl md:text-lg sm:text-sm text-white">Seja Bem vindo </p>

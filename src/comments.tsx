@@ -6,13 +6,13 @@ function Comments(props:any  ){
     const [comments,setComments] = useState([]);
     useEffect(() => {
       async function run(){
-      await axios.get(`https://backend-vagante-d1l9pqjvc-dayvison45s-projects.vercel.app/comments/${urlprop}/${props.comments}`).then(response=>setComments(response.data.comments))
+      await axios.get(`https://backend-vagante.onrender.com/comments/${urlprop}/${props.comments}`).then(response=>setComments(response.data.comments))
     
     }
     run()
   }, []);
   function saveComment(){
-  axios.post(`https://backend-vagante-d1l9pqjvc-dayvison45s-projects.vercel.app/addcomment/${urlprop}`,{nome:addComments[0], comentario:addComments[1],post:0})
+  axios.post(`https://backend-vagante.onrender.com/addcomment/${urlprop}`,{nome:addComments[0], comentario:addComments[1],post:0})
   }
     
     return(<>

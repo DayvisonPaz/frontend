@@ -19,8 +19,8 @@ function App() {
     
     async function run(){
        
-    await axios.get('https://backend-vagante-d1l9pqjvc-dayvison45s-projects.vercel.app/posts/vagante').then(response=>setPostsVagante(response.data.postsVagante ))
-    await axios.get('https://backend-vagante-d1l9pqjvc-dayvison45s-projects.vercel.app/posts/techno').then(response=>setPostsTechno(response.data.postsTechno  ))
+    await axios.get('https://backend-vagante.onrender.com/posts/vagante').then(response=>setPostsVagante(response.data.postsVagante ))
+    await axios.get('https://backend-vagante.onrender.com/posts/techno').then(response=>setPostsTechno(response.data.postsTechno  ))
   }
   run()
 }, []);
