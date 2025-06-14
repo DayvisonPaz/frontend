@@ -15,7 +15,7 @@ function EntendaBits(props:any) {
 <p><strong>&nbsp;</strong></p>
 <p><strong>L&oacute;gica Booleana&nbsp; a Origem de Tudo</strong></p>
 <p><strong>A L&oacute;gica Booleana, ou &Aacute;lgebra Booleana, &eacute; um pilar fundamental da ci&ecirc;ncia da computa&ccedil;&atilde;o e da eletr&ocirc;nica digital, mas suas ra&iacute;zes s&atilde;o profundas na matem&aacute;tica e na filosofia.</strong> <strong>Em 1847, ele publicou sua obra seminal, "The Mathematical Analysis of Logic", onde prop&ocirc;s um sistema l&oacute;gico que utilizava s&iacute;mbolos e opera&ccedil;&otilde;es alg&eacute;bricas para representar proposi&ccedil;&otilde;es e infer&ecirc;ncias l&oacute;gicas. Antes dele, a l&oacute;gica era tradicionalmente estudada dentro da filosofia, com base em argumentos verbais. Boole revolucionou essa abordagem ao demonstrar que a l&oacute;gica poderia ser tratada de forma matem&aacute;tica, abrindo caminho para o desenvolvimento de sistemas l&oacute;gicos mais complexos.</strong></p>
-<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p> 
 <p><strong>Como funciona o sistema Booleano?</strong></p>
 <p><strong>Tamb&eacute;m conhecido como sistema bin&aacute;rio ele tinha como regra dois valores Principais</strong></p>
 <p><strong>Sim e N&atilde;o, ou verdadeiro e falso, ligado e desligado, sempre um lado oposto do outro.</strong></p>

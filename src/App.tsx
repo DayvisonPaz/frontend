@@ -37,7 +37,7 @@ function App() {
     <Route path='/Summitofgods' element={<Summitofgods></Summitofgods>} />
     <Route path='/vinland' element={<Vinland></Vinland>} />
      <Route path='/entenda-bits' element={<EntendaBits></EntendaBits>} />
-    <Route path='/primeiros-computadoeres' element={<PrimeirosCOmputadores></PrimeirosCOmputadores>} />
+    <Route path='/primeiros-computadores' element={<PrimeirosCOmputadores></PrimeirosCOmputadores>} />
     <Route path='/' element={<Portfolio data={postsVagante?[postsVagante]:[]}></Portfolio>} />
     
     </Routes>

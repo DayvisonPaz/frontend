@@ -17,7 +17,7 @@ return(< >
 
     <div className="grid lg:grid-cols-2 items-center justify-items-center gap-5">
         <div className="">
-            <img className="h-80 w-80 object-cover lg:w-[500px] lg:h-[500px] rounded-full" src="../src/assets/profilepic.png" alt="" />
+            <img className="h-80 w-80 object-cover lg:w-[500px] lg:h-[500px] rounded-full" src="https://avatars.githubusercontent.com/u/88006182?s=400&u=8eb7a6e54da1a0493ada2d457aba04a322b55f6c&v=4" alt="" />
         </div>
         <div className="order-2 lg:order-2  flex flex-col justify-center lg:items-start text-center sm:text-left ">
             <p className="mt-2 text-3xl md:text-lg sm:text-sm text-white">Seja Bem vindo </p>
