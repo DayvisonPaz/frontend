@@ -1,199 +1,166 @@
 import Comments from "../comments";
+import Header from "../header";
 function EntendaBits(props:any) {
 
   return (
     <>
+    <Header></Header>
       <div className="text-justify flex items-center flex-col mt-11 w-[90%] m-auto 2xl:w-[60%] xl:w-[60%]"> 
       
-      <h1 className="text-2xl m-9">Entendendo Bits</h1>
-     <p><strong>Bit o item mais importante de toda computa&ccedil;&atilde;o.</strong></p>
-<p><strong>Todo sistema, por mais complexo que seja, &eacute; sustentado por unidades fundamentais.</strong><strong><br /></strong><strong> Na biologia, temos a c&eacute;lula.</strong><strong><br /></strong><strong> Na qu&iacute;mica, o &aacute;tomo.</strong><strong><br /></strong><strong> E na computa&ccedil;&atilde;o, temos o bit.</strong></p>
-<p><strong>Ele n&atilde;o ocupa espa&ccedil;o vis&iacute;vel, n&atilde;o tem forma reconhec&iacute;vel e, isoladamente, parece insignificante. Mas &eacute; o tijolo digital com o qual todos os edif&iacute;cios computacionais s&atilde;o constru&iacute;dos.</strong></p>
-<p><strong>O bit &eacute; a resposta de uma d&uacute;vida que se procurava a muito tempo, foi uma resposta t&atilde;o bem colocada que mesmo ap&oacute;s d&eacute;cadas de sua descoberta continua tendo uma relev&acirc;ncia altamente importante.</strong></p>
-<p><strong>Mas o que &eacute;, afinal, um bit?</strong><strong><br /></strong><strong> Como ele &eacute; representado fisicamente? Como carrega informa&ccedil;&atilde;o? Como forma, com outros bits, estruturas complexas capazes de armazenar, processar e transmitir dados?</strong></p>
-<p><strong>&nbsp;</strong></p>
-<p><strong>&nbsp;</strong></p>
-<p><strong>L&oacute;gica Booleana&nbsp; a Origem de Tudo</strong></p>
-<p><strong>A L&oacute;gica Booleana, ou &Aacute;lgebra Booleana, &eacute; um pilar fundamental da ci&ecirc;ncia da computa&ccedil;&atilde;o e da eletr&ocirc;nica digital, mas suas ra&iacute;zes s&atilde;o profundas na matem&aacute;tica e na filosofia.</strong> <strong>Em 1847, ele publicou sua obra seminal, "The Mathematical Analysis of Logic", onde prop&ocirc;s um sistema l&oacute;gico que utilizava s&iacute;mbolos e opera&ccedil;&otilde;es alg&eacute;bricas para representar proposi&ccedil;&otilde;es e infer&ecirc;ncias l&oacute;gicas. Antes dele, a l&oacute;gica era tradicionalmente estudada dentro da filosofia, com base em argumentos verbais. Boole revolucionou essa abordagem ao demonstrar que a l&oacute;gica poderia ser tratada de forma matem&aacute;tica, abrindo caminho para o desenvolvimento de sistemas l&oacute;gicos mais complexos.</strong></p>
-<p><strong>&nbsp;</strong></p> 
-<p><strong>Como funciona o sistema Booleano?</strong></p>
-<p><strong>Tamb&eacute;m conhecido como sistema bin&aacute;rio ele tinha como regra dois valores Principais</strong></p>
-<p><strong>Sim e N&atilde;o, ou verdadeiro e falso, ligado e desligado, sempre um lado oposto do outro.</strong></p>
-<p><strong>Exemplo :</strong></p>
-<p><strong>Sim, conclui que a resposta &eacute; verdadeiro</strong></p>
-<p><strong>N&atilde;o, conclui que a resposta &eacute; falsa</strong></p>
-<p><strong>Esses m&eacute;todos simples foram importantes de forma que cada valor teria apenas um tipo de valor, algo n&atilde;o poderia ser verdadeiro e falso ao mesmo tempo, apenas um tipo.</strong></p>
-<p><strong>Mas voc&ecirc; deve estar se perguntando qual a import&acirc;ncia disso?</strong></p>
-<p><strong>Eu responderei.</strong></p>
-<p><strong>Com esse dois tipo de senten&ccedil;a &eacute; poss&iacute;vel criar um universo gigante de escolhas, por exemplo</strong></p>
-<p><strong>Considera que voce tem quatro sequ&ecirc;ncias:</strong></p>
-<p><strong>Sim e N&atilde;o</strong></p>
-<p><strong>Sim e Sim</strong></p>
-<p><strong>N&atilde;o e Sim</strong></p>
-<p><strong>N&atilde;o e N&atilde;o</strong></p>
-<p><strong>&Eacute; o mesmo m&eacute;todo anterior, s&oacute; que uma senten&ccedil;a a mais,&nbsp; mas voc&ecirc; pode pensar da seguinte forma</strong></p>
-<p><strong>Sim e Sim, a resposta &eacute; verdadeira se as duas senten&ccedil;as forem verdadeiras</strong></p>
-<p><strong>Sim e N&atilde;o, a resposta &eacute; falsa&nbsp; se uma for falsa</strong></p>
-<p><strong>N&atilde;o e Sim a resposta &eacute; falsa se uma for falsa</strong></p>
-<p><strong>N&atilde;o e N&atilde;o, a resposta &eacute; falsa se as duas senten&ccedil;as foram falsas</strong></p>
-<p><strong>Ok, mas isso n&atilde;o ajuda muito n&eacute;? &Eacute; um pouco entender de primeira, mas j&aacute; vou esclarecer a ideia.</strong></p>
-<p><strong>Imagine que voc&ecirc; pede sua m&atilde;e para ir ao cinema e ela fala a seguinte coisa: &ldquo; Se voce tiver feitos suas tarefas e limpando seu quarto sim&rdquo;</strong></p>
-<p><strong>Tenho estes 2 par&acirc;metros podemos usar o m&eacute;todo acima:</strong></p>
-<p><strong>Fiz as Tarefas&nbsp; | Limpei o Quarto |&nbsp; Posso sair?</strong></p>
-<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong> <strong>sim&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </strong> <strong>sim &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </strong> <strong>sim</strong></p>
-<p><strong>&nbsp;&nbsp;&nbsp;</strong> <strong>nao &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </strong> <strong>sim &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </strong> <strong>nao</strong></p>
-<p><strong>&nbsp;&nbsp;&nbsp;</strong> <strong>sim&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </strong> <strong>nao &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </strong> <strong>nao</strong></p>
-<p><strong>&nbsp;&nbsp;&nbsp;</strong> <strong>nao &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </strong> <strong>nao &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </strong> <strong>nao</strong></p>
-<p><strong>&nbsp;</strong></p>
-<p><strong>Essa &eacute; a l&oacute;gica booleana E tamb&eacute;m conhecida como AND, que recebe como resposta apenas se as duas op&ccedil;&otilde;es forem verdadeiras.</strong></p>
-<p><strong>Existem tamb&eacute;m o modelo Ou</strong></p>
-<p><strong>Que retorna verdadeiro caso uma das op&ccedil;&otilde;es seja verdadeira, exemplo:</strong></p>
-<p><strong>Vamos pedir novamente a m&atilde;e para ir ao cinema, s&oacute; que agora ela est&aacute; menos rigorosa, ela diz: &ldquo;Voc&ecirc; pode ir se terminar suas tarefa ou se limpar seu quarto&rdquo;</strong></p>
-<p><strong>Ent&atilde;o podemos criar a seguinte tabela</strong></p>
-<p><strong>Fiz as Tarefas&nbsp; | Limpei o Quarto |&nbsp; Posso sair?</strong></p>
-<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong> <strong>sim&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </strong> <strong>sim &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </strong> <strong>sim</strong></p>
-<p><strong>&nbsp;&nbsp;&nbsp;</strong> <strong>nao &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </strong> <strong>sim &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </strong> <strong>sim</strong></p>
-<p><strong>&nbsp;&nbsp;&nbsp;</strong> <strong>sim&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </strong> <strong>nao &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </strong> <strong>sim</strong></p>
-<p><strong>&nbsp;&nbsp;&nbsp;</strong> <strong>nao &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </strong> <strong>nao &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </strong> <strong>nao</strong></p>
-<p><strong>Esse &eacute; o sistema Ou tamb&eacute;m conhecido como OR.</strong></p>
-<p><strong>Existe tamb&eacute;m o Sistema&nbsp; Not, mas &eacute; um caso espec&iacute;fico.</strong></p>
-<p><strong>Ele retorna o oposto do que foi proposto, exemplo:</strong></p>
-<p><strong>Not verdadeiro: retornaria falso</strong></p>
-<p><strong>Not falso:&nbsp; retornaria verdadeiro</strong></p>
-<p><strong>Ok, voc&ecirc; aprendeu os principais elementos do sistema booleano agora, como isso foi chegar aos computadores?</strong></p>
-<p><strong>&nbsp;</strong></p>
-<p><strong>A quest&atilde;o primordial &eacute; quando o bit foi usado para c&aacute;lculo, inicialmente a soma.</strong></p>
-<p><strong>O exemplo antes dos bits pode ser a soma de l&acirc;mpadas acesas, se voc&ecirc; tem 8 fileiras de l&acirc;mpadas, voc&ecirc; pode representar 8 n&uacute;meros se for usar apenas a contagem como argumento, agora usando o sistema bin&aacute;rio voc&ecirc; pode representar at&eacute; 255 n&uacute;meros e todas as letras do alfabeto.</strong></p>
-<p><strong>Enquanto o sistema decimal usa 10 s&iacute;mbolos (de 0 a 9), o sistema bin&aacute;rio usa apenas dois: 0 e 1. Mas o princ&iacute;pio &eacute; o mesmo: cada posi&ccedil;&atilde;o representa uma pot&ecirc;ncia da base usada.</strong></p>
-<p><strong>nos n&uacute;meros decimais como de 0 a 9, pense no 1 como uma l&acirc;mpada&nbsp;</strong></p>
-<p><strong>Voc&ecirc; representaria&nbsp; 3 com 3 l&acirc;mpadas acesas</strong></p>
-<p><strong>O 9 com 9 l&acirc;mpadas acesas</strong></p>
-<p><strong>No sistema bin&aacute;rio, as casas s&atilde;o pot&ecirc;ncias de 2 ou seja:</strong></p>
-<p><strong>O primeiro n&uacute;mero &eacute; 2⁰, o segundo 2&sup1;, terceiro 2&sup2;&hellip; assim adiante:</strong></p>
-<p><strong>Em um sistema com 8 algoritmos ter&iacute;amos:</strong></p>
-<p><strong>1 | 2 | 4 | 8 | 16 | 32 | 64 | 128 |</strong></p>
-<p><strong>Assim tendo a liberdade de representar os n&uacute;meros de 0 a 255, e sendo capaz de se representar ainda mais com a adi&ccedil;&atilde;o de mais elementos.</strong></p>
-<p><strong>Como representar o 3?</strong></p>
-<p><strong>&nbsp;1 | 2 | 4 | 8 | 16 | 32 | 64 | 128 |</strong></p>
-<p><strong>X &nbsp; X</strong></p>
-<p><strong>E o 9 ?&nbsp;</strong></p>
-<p><strong>&nbsp;1 | 2 | 4 | 8 | 16 | 32 | 64 | 128 |</strong></p>
-<p><strong>&nbsp;X &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; X</strong></p>
-<p><strong>Com isso, &eacute; poss&iacute;vel representar qualquer n&uacute;mero que conhecemos com apenas 0s e 1s, desde que usemos mais bits.</strong></p>
-<table>
-<tbody>
-<tr>
-<td>
-<p><strong>Decimal</strong></p>
-</td>
-<td>
-<p><strong>Bin&aacute;rio</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>0</strong></p>
-</td>
-<td>
-<p><strong>0000</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>1</strong></p>
-</td>
-<td>
-<p><strong>0001</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>2</strong></p>
-</td>
-<td>
-<p><strong>0010</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>3</strong></p>
-</td>
-<td>
-<p><strong>0011</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>4</strong></p>
-</td>
-<td>
-<p><strong>0100</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>5</strong></p>
-</td>
-<td>
-<p><strong>0101</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>...</strong></p>
-</td>
-<td>
-<p><strong>...</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p><strong>255</strong></p>
-</td>
-<td>
-<p><strong>11111111</strong></p>
-</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Com 8 bits, conseguimos representar de 0 a 255&nbsp; o que chamamos de byte. E com mais bytes, mais n&uacute;meros, mais palavras, mais tudo.</strong></p>
-<h3><strong>E as letras? Como representar palavras com n&uacute;meros bin&aacute;rios?</strong></h3>
-<p><strong>A pr&oacute;xima quest&atilde;o era: como representar letras, sinais e textos com 0s e 1s?</strong></p>
-<p><strong>A resposta foi criar tabelas de codifica&ccedil;&atilde;o, associando n&uacute;meros bin&aacute;rios a caracteres do alfabeto. A primeira grande padroniza&ccedil;&atilde;o foi a tabela ASCII (American Standard Code for Information Interchange), criada nos anos 1960.</strong></p>
-<p><strong>Na tabela ASCII:</strong></p>
-<p>&nbsp;</p>
-<ul>
-<li><strong><strong>A = 65 = 01000001</strong><strong><br /><br /></strong></strong></li>
-</ul>
-<ul>
-<li><strong>B = 66 = 01000010</strong><strong><br /><br /></strong></li>
-</ul>
-<ul>
-<li><strong>a = 97 = 01100001</strong><strong><br /><br /></strong></li>
-</ul>
-<ul>
-<li><strong>! = 33 = 00100001</strong><strong><br /><br /></strong></li>
-</ul>
-<p>&nbsp;</p>
-<p><strong>Assim, escrever a palavra &ldquo;Oi&rdquo; no computador &eacute;, na verdade, armazenar dois n&uacute;meros bin&aacute;rios: 01001111 (para O) e 01101001 (para i).</strong></p>
-<p><strong>Mais tarde, o ASCII foi expandido para o Unicode, que suporta s&iacute;mbolos de todos os idiomas do mundo, emojis e outros caracteres especiais. Ele faz isso usando mais bits at&eacute; 16 ou 32 bits por s&iacute;mbolo.</strong></p>
-<p>&nbsp;</p>
-<p><strong>&nbsp;</strong></p>
-<p><strong>&nbsp;</strong></p>
-<p><strong>&nbsp;</strong></p>
-<p><strong>&nbsp;</strong></p>
-<p><strong>&nbsp;</strong></p>
-<p><strong>&nbsp;</strong></p>
-<p><strong>&nbsp;</strong></p>
-<p><strong>&nbsp;</strong></p>
-<p><strong>&nbsp;</strong></p>
-<p><strong>&nbsp;</strong></p>
-<p><strong>&nbsp;</strong></p>
-<p>Bom, para finalizar espero que tenha aproveitado, se contém imprecisões, erros de gramáticas ou outros, comente abaixo.</p>
+      <div className="prose max-w-3xl mx-auto p-6">
+      <h1>Entendendo Bits</h1>
+      <p>
+        O <strong>bit</strong> é o item mais importante de toda a computação.
+      </p>
+      <p>
+        Todo sistema, por mais complexo que seja, é sustentado por unidades fundamentais:
+      </p>
+      <ul>
+        <li>Na biologia, temos a célula.</li>
+        <li>Na química, o átomo.</li>
+        <li>Na computação, temos o bit.</li>
+      </ul>
+      <p>
+        Ele não ocupa espaço visível, não tem forma reconhecível e, isoladamente, parece insignificante. 
+        Mas é o tijolo digital com o qual todos os edifícios computacionais são construídos.
+      </p>
+      <p>
+        O bit foi a resposta para uma dúvida que se buscava há muito tempo. Sua simplicidade e eficiência 
+        foram tão bem colocadas que, mesmo após décadas, continuam altamente relevantes.
+      </p>
+      <p>
+        Mas afinal: <strong>o que é um bit?</strong> Como ele é representado fisicamente? 
+        Como carrega informação? Como forma, com outros bits, estruturas complexas capazes de armazenar, 
+        processar e transmitir dados?
+      </p>
+
+      <h2>Lógica Booleana: a Origem de Tudo</h2>
+      <p>
+        A <strong>Lógica Booleana</strong>, ou <strong>Álgebra Booleana</strong>, é um pilar da ciência da 
+        computação e da eletrônica digital. Suas raízes estão na matemática e na filosofia.
+      </p>
+      <p>
+        Em 1847, George Boole publicou <em>The Mathematical Analysis of Logic</em>, propondo um sistema 
+        lógico que utilizava símbolos e operações algébricas para representar proposições e inferências. 
+        Antes dele, a lógica era estudada na filosofia, com base em argumentos verbais. 
+        Boole revolucionou esse campo ao mostrar que a lógica poderia ser tratada matematicamente, 
+        abrindo caminho para os sistemas digitais.
+      </p>
+
+      <h2>Como funciona o sistema booleano?</h2>
+      <p>
+        Também conhecido como <strong>sistema binário lógico</strong>, ele trabalha com dois valores principais:
+      </p>
+      <ul>
+        <li>Sim / Não</li>
+        <li>Verdadeiro / Falso</li>
+        <li>Ligado / Desligado</li>
+      </ul>
+
+      <h3>O operador AND (E)</h3>
+      <p>
+        A resposta só é <strong>verdadeira</strong> se <strong>todas as condições forem verdadeiras</strong>.
+      </p>
+      <p>
+        Exemplo: Você pede à sua mãe para ir ao cinema. Ela diz: 
+        <em>“Se você tiver feito suas tarefas <strong>e</strong> limpado seu quarto, pode ir.”</em>
+      </p>
+
+      <table className="table-auto border-collapse border border-gray-400 my-4">
+        <thead>
+          <tr>
+            <th className="border px-2">Fiz as Tarefas?</th>
+            <th className="border px-2">Limpei o Quarto?</th>
+            <th className="border px-2">Posso sair?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td className="border px-2">Sim</td><td className="border px-2">Sim</td><td className="border px-2">Sim</td></tr>
+          <tr><td className="border px-2">Sim</td><td className="border px-2">Não</td><td className="border px-2">Não</td></tr>
+          <tr><td className="border px-2">Não</td><td className="border px-2">Sim</td><td className="border px-2">Não</td></tr>
+          <tr><td className="border px-2">Não</td><td className="border px-2">Não</td><td className="border px-2">Não</td></tr>
+        </tbody>
+      </table>
+
+      <h3>O operador OR (Ou)</h3>
+      <p>
+        A resposta é <strong>verdadeira</strong> se pelo menos <strong>uma condição for verdadeira</strong>.
+      </p>
+      <p>
+        Exemplo: A mãe agora diz: 
+        <em>“Você pode ir se terminar suas tarefas <strong>ou</strong> se limpar o quarto.”</em>
+      </p>
+
+      <table className="table-auto border-collapse border border-gray-400 my-4">
+        <thead>
+          <tr>
+            <th className="border px-2">Fiz as Tarefas?</th>
+            <th className="border px-2">Limpei o Quarto?</th>
+            <th className="border px-2">Posso sair?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td className="border px-2">Sim</td><td className="border px-2">Sim</td><td className="border px-2">Sim</td></tr>
+          <tr><td className="border px-2">Sim</td><td className="border px-2">Não</td><td className="border px-2">Sim</td></tr>
+          <tr><td className="border px-2">Não</td><td className="border px-2">Sim</td><td className="border px-2">Sim</td></tr>
+          <tr><td className="border px-2">Não</td><td className="border px-2">Não</td><td className="border px-2">Não</td></tr>
+        </tbody>
+      </table>
+
+      <h3>O operador NOT (Não)</h3>
+      <p>
+        Ele inverte o valor lógico:
+      </p>
+      <ul>
+        <li>NOT Verdadeiro → Falso</li>
+        <li>NOT Falso → Verdadeiro</li>
+      </ul>
+
+      <h2>Bits e o Sistema Binário</h2>
+      <p>
+        O salto fundamental ocorreu quando o <strong>bit</strong> foi usado para cálculos. 
+        Enquanto o sistema decimal usa 10 símbolos (0 a 9), o sistema binário usa apenas <strong>0 e 1</strong>.
+      </p>
+      <p>Cada posição representa uma potência de 2:</p>
+      <p>1 | 2 | 4 | 8 | 16 | 32 | 64 | 128</p>
+      <p>
+        Assim, com 8 bits (um <strong>byte</strong>), é possível representar os números de 0 a 255.
+      </p>
+      <p><strong>3 em binário:</strong> 00000011</p>
+      <p><strong>9 em binário:</strong> 00001001</p>
+
+      <h2>Representando Letras</h2>
+      <p>
+        Não bastava representar apenas números: era preciso representar letras e símbolos. 
+        Para isso, foi criada a <strong>tabela ASCII</strong> (1960):
+      </p>
+      <ul>
+        <li>A = 65 = 01000001</li>
+        <li>B = 66 = 01000010</li>
+        <li>a = 97 = 01100001</li>
+        <li>! = 33 = 00100001</li>
+      </ul>
+      <p>
+        Exemplo: a palavra <strong>“Oi”</strong> no computador é:
+      </p>
+      <ul>
+        <li>O = 01001111</li>
+        <li>i = 01101001</li>
+      </ul>
+      <p>
+        Mais tarde, surgiu o <strong>Unicode</strong>, que expandiu a representação para todos os idiomas, 
+        emojis e símbolos especiais, usando 16 ou 32 bits.
+      </p>
+
+      <p className="mt-6 font-semibold">
+        Esse é o poder do bit: com apenas dois estados, ele permite construir números, palavras, imagens 
+        e até mundos digitais inteiros.
+      </p>
+    </div>
 
 </div>
 
-      <Comments comments={0} {...props} />
+      <Comments comments={2} {...props} />
     </>
   );
 }
