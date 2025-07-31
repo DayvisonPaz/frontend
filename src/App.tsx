@@ -32,7 +32,7 @@ const postsVagante =[
     {
       "_id": "6888a00a70ead8d8e001ed8a",
       "title": "Dilema Das Redes Sociais",
-      "About": "Entenda como as redes sociais não sao suas amigas, como elas te manipulam, te enganam e depois te vendem",
+      "About": "Entenda como as redes sociais não sao suas amigas, como elas te manipulam, te enganam e depois te vendem.",
       "post": 4,
       "tumb": "https://ik.imagekit.io/yfgcubiem1/dilema%20das%20redes/dilema%20das%20redes.png?updatedAt=1753783725568",
       "route": "dilema-das-redes"
@@ -40,7 +40,7 @@ const postsVagante =[
     {
       "_id": "6888a0f770ead8d8e001ed8e",
       "title": "Idiolatria",
-      "About": "A idiotice de se idolatrar famosos e influencer, entenda de uma vez o quão fútil é o seu fanatismo e como os influencer são na verdade DESinfluentes",
+      "About": "A idiotice de se idolatrar famosos e influencers, entenda de uma vez o quão fútil é o seu fanatismo e como os influencers são na verdade DESinfluentes.",
       "post": 5,
       "data": "2023-07-12T03:00:00.000Z",
       "tumb": "https://ik.imagekit.io/yfgcubiem1/idiolatria/idiolatria%20%20(1).png?updatedAt=1753827465007",
@@ -49,7 +49,7 @@ const postsVagante =[
     {
       "_id": "6888a1b170ead8d8e001ed90",
       "title": "Matando Semideuses",
-      "About": "Mostrando a vôce como pessoa como Eistein, Steve jobs e Nikola Tesla ditas como Semideuses são tão humano quanto voce",
+      "About": "Mostrando a você que pessoa como Eistein, Steve jobs e Nikola Tesla ditas como Semideuses, são tão humano quanto voce.",
       "post": 6,
       "tumb": "https://ik.imagekit.io/yfgcubiem1/matando%20semideuses/matando%20gigantes.jpg?updatedAt=1753783685714",
       "route": "matando-semideuses"
@@ -75,7 +75,7 @@ const postsTechno = [
     {
       "_id": "68889f2570ead8d8e001ed88",
       "title": "Mecanismos de busca",
-      "About": "Em um mundo antes dependente do Google, entenda a importancia dos Mecanismos de busca e como foi criado",
+      "About": "Em um mundo antes dependente do Google, entenda a importancia dos Mecanismos de busca e como foram criados.",
       "post": 3,
       "tumb": "https://ik.imagekit.io/yfgcubiem1/mecanismo%20de%20busca/google%20search.png?updatedAt=1753783708879",
       "route": "mecanismos-de-busca"
