@@ -18,7 +18,7 @@ import DilemaDasRedes from "./pages/DilemaDasRedes";
 
 
 function App() {
-axios.get(`http://localhost:3030/comments/vagante/1`)
+axios.get(`https://backend-vagante.onrender.com/comments/vagante/1`)
 const postsVagante =[
     {
       "_id": "651ef5c208acb22a54779b5f",

@@ -7,13 +7,13 @@ function Comments(props:any  ){
     useEffect(() => {
       async function run(){
      
-      await axios.get(`http://localhost:3030/comments/vagante/${props.comments}`).then(response=>setComments(response.data.comments))
+      await axios.get(`https://backend-vagante.onrender.com/comments/vagante/${props.comments}`).then(response=>setComments(response.data.comments))
     
     }
     run()
   }, []);
   function saveComment(){
-  axios.post(`http://localhost:3030/addcomment/${props.comments}`,{nome:addComments[0], comentario:addComments[1],post:props.comments})
+  axios.post(`https://backend-vagante.onrender.com/addcomment/${props.comments}`,{nome:addComments[0], comentario:addComments[1],post:props.comments})
 
 }
     

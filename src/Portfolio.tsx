@@ -290,18 +290,18 @@ return(< >
       </div>
       <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
           <div>
-            <img src="https://1drv.ms/i/c/ccdb940572a31808/IQTTSbOtBiIoSZMRjJ4mQ0BoAWFnFXPpOPmfDj7bNjg0qHU?width=1024" alt="" />
+            <img src="https://ik.imagekit.io/yfgcubiem1/blog/movielist%20print.jpg?updatedAt=1753783747914" alt="" />
              <a href='https://github.com/DayvisonPaz/frontend-movielist' ><h3 className="mb-2 text-center text-xl font-bold dark:text-white">Movielist</h3></a> 
              
           </div>
           <div>
-            <img src="https://1drv.ms/i/c/ccdb940572a31808/IQQX3nAUMVDvTrCxtzgejFcPASE3jQvTvHsena9TA5hvCEM?width=1918&height=907" alt="" />
+            <img src="https://ik.imagekit.io/yfgcubiem1/blog/dayvison%20blog%20print.png?updatedAt=1753783747871" alt="" />
              <a href="/"><h3 className="mb-2 text-xl text-center font-bold dark:text-white">Portfolio</h3></a> 
              
           </div>
           
           <div>
-            <img src="https://1drv.ms/i/c/ccdb940572a31808/IQSJS3uKYHoZSqETRIYJWVs0AdxrBAcwX6C_WCl-iw-IAIw?width=1024" alt="" />
+            <img src="https://ik.imagekit.io/yfgcubiem1/blog/replit%20python.png?updatedAt=1753783747810" alt="" />
               <a href="https://drive.google.com/drive/folders/1dUHtGPOU2TSh-gWvxD8jQzlMrH5aOjd3"><h3 className="mb-2 text-center text-xl font-bold dark:text-white">Replit</h3></a>
              
           </div>
@@ -319,7 +319,8 @@ return(< >
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
        <section className="shadow-2xl m-auto w-4/5 backdrop-blur-none flex flex-col items-center justify-center">
         <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-          <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Meu Blog</h2>
+          <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"> 
+           <a className='text-blue-500' href="/vagante"> Meu Blog</a></h2>
           <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">Aqui você encontra reflexões, tutoriais práticos e ideias que conectam razão e lógica .
 <a className='text-blue-500' href="/vagante"> Veja Mais</a>
 
