@@ -434,7 +434,7 @@ PR(A) = (1 – d) + d * Σ [ PR(Ti) / C(Ti) ]
         </p>
       </div>
 
-      <Comments comments={3} {...props} />
+      <Comments comments={4} {...props} />
     </>
   );
 }

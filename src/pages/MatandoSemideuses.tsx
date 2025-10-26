@@ -105,8 +105,8 @@ function MatandoSemideuses(props:any) {
 <p>Nunca deixe de questionar alguém que tenha a aura de ídolo, todos têm erros e falhas.</p>
 
 <img className="mt-10 mb-10" src="https://ik.imagekit.io/yfgcubiem1/matando%20semideuses/perceu%20e%20medusa.png?updatedAt=1753783685964" alt="Uma ilustração de Perseu segurando a cabeça da Medusa" />
-
-<Comments comments={4} {...props} />
+ 
+<Comments comments={7} {...props} />
 
 </div>
     </>

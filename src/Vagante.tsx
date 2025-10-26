@@ -1,19 +1,49 @@
-import { useState } from "react";
+import { useState , useEffect } from "react";
 import Header from "./header";
 
 function Vagante(data: any) {
-  const [posts, setPosts] = useState([...data.data[0], ...data.data[1]]);
+ const [posts, setPosts] = useState([...data.data[0]]);
   const [cor, setCor] = useState(['bg-gray-800', 'bg-gray-800']);
+let tecnico: any[] = [];
+let outros: any[] = [];
+
+const [tema, setTema] = useState([tecnico,outros]);
+useEffect(() => {
+    
+ if(tema[0].length==0){
+Separe()
+ }
+   
+  }, []); 
+ 
+
+
+ 
+  function Separe(){
+      for (let i = 0; i< data.data[0].length; i++) {
+        if(data.data[0][i].post%2){
+          tecnico.push(data.data[0][i])
+         
+        }else{
+          outros.push(data.data[0][i])
+         
+        }
+setTema([tecnico,outros])
+ 
+      }
+     
+  }
 
   function Chancefilter(x: any) {
-    if (x === "tecnico" && posts !== data.data[1]) {
-      setPosts(data.data[1]);
+    if (x === "tecnico" && posts !== tema[1]) {
+      
+      setPosts(tema[1]);
       setCor(['bg-blue-800', 'bg-gray-800']); // Técnico azul, Outros cinza
-    } else if (x === "outros" && posts !== data.data[0]) {
-      setPosts(data.data[0]);
+    } else if (x === "outros" && posts !== tema[0]) {
+      setPosts(tema[0]);
       setCor(['bg-gray-800', 'bg-blue-800']); // Técnico cinza, Outros azul
     } else {
-      setPosts([...data.data[0], ...data.data[1]]);
+      setPosts([...data.data[0]]);
       setCor(['bg-gray-800', 'bg-gray-800']);
     }
   }
@@ -22,7 +52,11 @@ function Vagante(data: any) {
     <>
       <div className="bg-[#323C59] w-screen h-screen">
         <div className="pt-20 w-screen h-full overflow-x-hidden flex flex-col items-center">
+           <blockquote className="m-4 border-gray-400 pl-4 italic text-white">
+  "Apenas um Programador tentando escrever"
+</blockquote>
           <div>
+           
             <button
               type="button"
               className={`text-white ${cor[0]} hover:brightness-110 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2`}
@@ -37,6 +71,7 @@ function Vagante(data: any) {
             >
               Outros
             </button>
+            
           </div>
 
           {posts.length > 0 ? (

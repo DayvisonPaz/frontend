@@ -89,7 +89,7 @@ function DilemaDasRedes(props:any) {
 
 <img className="my-4 m-auto p-5" src="https://ik.imagekit.io/yfgcubiem1/dilema%20das%20redes/idolatram%20celulares.jpg?updatedAt=1753783725511" alt="" />
 </div>
-      <Comments comments={6} {...props} />
+      <Comments comments={3} {...props} />
     </>
   );
 }

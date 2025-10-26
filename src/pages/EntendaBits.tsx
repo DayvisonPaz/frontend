@@ -160,7 +160,7 @@ function EntendaBits(props:any) {
 
 </div>
 
-      <Comments comments={2} {...props} />
+      <Comments comments={0} {...props} />
     </>
   );
 }

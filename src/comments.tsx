@@ -13,24 +13,48 @@ function Comments(props:any  ){
     run()
   }, []);
   function saveComment(){
-  axios.post(`https://backend-vagante.onrender.com/addcomment/${props.comments}`,{nome:addComments[0], comentario:addComments[1],post:props.comments})
-
+  axios.post(`https://backend-vagante.onrender.com/addcomment/vagante`,{nome:addComments[0], comentario:addComments[1],post:props.comments}).then(response=>console.log(response.data))
+setTimeout(() => {
+  window.location.reload();
+}, 2000)
 }
     
     return(<>
     <div className="w-screen  h-[20%] mb-6">
     
   <form onSubmit={saveComment} className="max-w-2xl bg-white rounded-lg border p-2 mx-auto mt-20">
-    <div className="px-3 mb-2 mt-2">
-        <textarea required onChange={(e)=>setaddComments([addComments[0],e.target.value])} value={addComments[1]} placeholder="comment" className="w-full bg-gray-100 rounded border border-gray-400 leading-normal resize-none h-20 py-2 px-3 font-medium placeholder-gray-700 focus:outline-none focus:bg-white"></textarea>
-    </div>
+   <div className="px-3 mb-2 mt-2">
+           
+            <textarea
+              required
+              onChange={(e) => setaddComments([addComments[0], e.target.value])}
+              value={addComments[1]}
+              placeholder="comment"
+              className="w-full bg-gray-100 rounded border border-gray-400 leading-normal resize-none h-20 py-2 px-3 font-medium placeholder-gray-700 focus:outline-none focus:bg-white"
+            ></textarea>
+          </div>
+   
     <div className="flex justify-around px-4">
-    <input required className="w-3/5 border-2" type="text" onChange={(e)=>setaddComments([e.target.value,addComments[1]])} value={addComments[0]}  placeholder="Insira seu nome" />    <input type="submit" className="px-2.5 py-1.5 rounded-md text-white text-sm bg-indigo-500" value="Comment"/>
-    </div>
+    <input
+      required
+      className="w-3/5 border-2"
+      type="text"
+      onChange={(e) => setaddComments([e.target.value, addComments[1]])}
+      value={addComments[0]}
+      placeholder="Insira seu nome"
+    />
+    <button
+      type="button"
+      onClick={saveComment}
+      className="px-2.5 py-1.5 rounded-md text-white text-sm bg-indigo-500"
+    >
+      Comment
+    </button>
+  </div>
 </form>
      </div>
     
-   {comments ? comments.map(e => (
+   {comments[0] ? comments.map(e => (
   <div className='max-w-2xl bg-white rounded-lg border p-2 mx-auto mt-4 flex flex-col justify-center w-screen items-center'>
     <div className='flex items-center w-full'>
       <img
@@ -42,7 +66,7 @@ function Comments(props:any  ){
     </div>
     <div className='w-full mt-2'>{e['comentario']}</div>
   </div>
-)) : 'nada'}
+)) : ''}
   </>)
 }
 

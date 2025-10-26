@@ -34,7 +34,7 @@ function Summitofgods(props:any) {
 <p>Na subida o fotojornalista tenta acompanhar habu a uma distancia, mas depois de uma altura o fotojornalista nao acostumado com essa altitude e falta de experiencia tao dedicada acaba se encontrando em uma situação de quase morte, então habu volta e salva o mesmo, pondo em risco sua escalada, apos deixar o jornalista em segurança e ajudar para poder descer habu continua, mesmo sabendo que a subida seria quase impossivel, o fotojornalista desce e espera habu retornar, apos dias nada de habu e o morador do vilarejo que ajudou os dois a carregas os items dos dois até li desiste e vai embora, na ida entrega ao fotojornalista a camera e um bilhete que habu pediu para entregar.</p>
 <img className="w-3/5 m-auto mb-6 mt-6 m-auto mb-6 mt-6" src="https://ik.imagekit.io/yfgcubiem1/summit%20of%20gods/Summit-of-the-Gods.jpg?updatedAt=1753783814850" alt="" />
 </div>
-      <Comments comments={0} {...props} />
+      <Comments comments={1} {...props} />
     </>
   );
 }

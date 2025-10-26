@@ -128,7 +128,7 @@ function PrimeirosCOmputadores(props:any) {
 <p>Bom, para finalizar espero que tenha aproveitado, se contém imprecisões, erros de gramáticas ou outros, comente abaixo.</p>
 </div>
 
-      <Comments comments={1} {...props} />
+      <Comments comments={2} {...props} />
     </>
   );
 }
