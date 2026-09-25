@@ -2,12 +2,7 @@ import Header from './header'
 
 import Particlebackground from './pages/particlesbackground'
 import Typewriter from "typewriter-effect"
-const socials = [
-  { name: "GitHub", href: "https://github.com/DayvisonPaz" },
-  { name: "LinkedIn", href: "https://www.linkedin.com/in/dayvison-da-paz/" },
-  { name: "Instagram", href: "https://www.instagram.com/dayvisonapz/" },
-  { name: "Chess.com", href: "https://www.chess.com/member/dayv1son" },
-];
+
 function Portfolio(data:any){
   const posts = data.data[0]
 return(< >
