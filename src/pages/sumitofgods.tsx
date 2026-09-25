@@ -4,7 +4,7 @@ function Summitofgods(props:any) {
 
   return (
     <>
-    <div className="p-16 xl:text-2xl">
+    <div className="p-16 xl:text-2xl text-black">
    <h1 className="mb-6 text-3xl text-center">Porque subir até o topo?</h1>
 <div className="flex flex-col  items-center justify-center"><img className="w-3/5" src="https://ik.imagekit.io/yfgcubiem1/summit%20of%20gods/subindo.jpg?updatedAt=1753783815134" alt="" />
 <h3 className="text-center m-6">"Caminhada. Escalada. Escalar mais,ir ainda mais alto. E para quê?"</h3>

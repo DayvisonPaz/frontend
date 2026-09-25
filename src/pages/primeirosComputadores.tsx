@@ -5,7 +5,7 @@ function PrimeirosCOmputadores(props:any) {
   return (
     <>
     <Header></Header>
-      <div className="text-justify flex items-center flex-col mt-11 w-[90%] m-auto 2xl:w-[60%] xl:w-[60%]"> 
+      <div className="text-justify flex items-center flex-col mt-11 w-[90%] m-auto 2xl:w-[60%] xl:w-[60%] text-black"> 
       
       <h1 className="text-2xl m-9">Os Primeiros Computadores</h1>
     <h2>Abaco o Inicio de tudo</h2>

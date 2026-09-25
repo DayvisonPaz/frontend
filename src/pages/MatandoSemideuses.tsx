@@ -4,7 +4,7 @@ function MatandoSemideuses(props:any) {
 
   return (
     <>
-    <div className="text-justify flex items-center flex-col mt-28 w-[90%]  text-xl m-auto 2xl:w-[60%] xl:w-[60%]">
+    <div className="text-justify flex items-center flex-col mt-28 w-[90%]  text-xl m-auto 2xl:w-[60%] xl:w-[60%] text-black">
 
 
 <img className="mt-24 w-2/3 m-auto" src="https://ik.imagekit.io/yfgcubiem1/matando%20semideuses/idolatrando%20eisten-min%20(1).png?updatedAt=1753837659653" alt="Uma ilustração de um homem idolatrando uma figura que se assemelha a Einstein" />

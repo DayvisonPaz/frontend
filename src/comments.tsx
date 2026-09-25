@@ -46,7 +46,7 @@ setTimeout(() => {
     <button
       type="button"
       onClick={saveComment}
-      className="px-2.5 py-1.5 rounded-md text-white text-sm bg-indigo-500"
+      className="px-2.5 py-1.5 rounded-md text-black text-sm bg-indigo-500"
     >
       Comment
     </button>

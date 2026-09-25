@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f7f7f7;
+  color: #fdfdfd;
+  font-family: 'IBM Plex Sans', sans-serif;
+  
+}
+p {
+  color: black; /* Makes all paragraph text blue */
+}
+::selection {
+  background-color: #C1502E;
+  color: #f7f7f7;
+}
+
+.font-display {
+  font-family: 'Fraunces', serif;
+}

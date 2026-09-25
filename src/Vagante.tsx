@@ -1,5 +1,6 @@
 import { useState , useEffect } from "react";
 import Header from "./header";
+import Particlebackground from './pages/particlesbackground';
 
 function Vagante(data: any) {
  const [posts, setPosts] = useState([...data.data[0]]);
@@ -50,23 +51,24 @@ setTema([tecnico,outros])
 
   return (
     <>
-      <div className="bg-[#323C59] w-screen h-screen">
+    <Particlebackground></Particlebackground>
+      <div className="w-screen h-screen z-10 absolute texto-black ">
         <div className="pt-20 w-screen h-full overflow-x-hidden flex flex-col items-center">
-           <blockquote className="m-4 border-gray-400 pl-4 italic text-white">
+           <blockquote className="m-4 border-gray-400 pl-4 italic text-black">
   "Apenas um Programador tentando escrever"
 </blockquote>
           <div>
            
             <button
               type="button"
-              className={`text-white ${cor[0]} hover:brightness-110 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2`}
+              className={`text-black ${cor[0]} bg-[#DFE5F0] hover:brightness-110 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2`}
               onClick={() => Chancefilter("tecnico")}
             >
               Técnicos
             </button>
             <button
               type="button"
-              className={`text-white ${cor[1]} hover:brightness-110 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2`}
+              className={`text-black ${cor[1]} bg-[#DFE5F0] hover:brightness-110 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2`}
               onClick={() => Chancefilter("outros")}
             >
               Outros
@@ -79,7 +81,7 @@ setTema([tecnico,outros])
               <a
                 href={"/" + e.route}
                 key={e.post}
-                className="m-5 w-[60vw] flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row  hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+                className="m-5 w-[60vw] flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row  hover:bg-gray-100 dark:border-gray-700 dark:bg-[#DFE5F0] dark:hover:bg-gray-700"
               >
                 <img
                   className="object-cover rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
@@ -87,7 +89,7 @@ setTema([tecnico,outros])
                   alt=""
                 />
                 <div className="flex w-[60vw] flex-col justify-between p-4 leading-normal">
-                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">
                     {e.title}
                   </h5>
                   <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">

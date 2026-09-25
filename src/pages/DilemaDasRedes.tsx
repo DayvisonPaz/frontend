@@ -4,7 +4,7 @@ function DilemaDasRedes(props:any) {
 
   return (
     <>
-   <div className="text-justify flex items-center flex-col mt-28 w-[90%] text-xl m-auto 2xl:w-[60%] xl:w-[60%]">
+   <div className="text-justify flex items-center flex-col mt-28 w-[90%] text-xl m-auto 2xl:w-[60%] xl:w-[60%] text-black">
 <img src="https://ik.imagekit.io/yfgcubiem1/dilema%20das%20redes/marionete.jpg?updatedAt=1753783725471" alt="" />
 <h1 className="bold text-3xl font-bold my-4">Dilema das Redes</h1>
 

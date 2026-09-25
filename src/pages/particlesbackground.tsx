@@ -37,7 +37,7 @@ const Particlebackground = () => {
       () => ({
         background: {
           color: {
-            value: "#1D293C",
+            value: "#f7f7f7",
           },
         },
         fpsLimit: 120,
@@ -54,20 +54,20 @@ const Particlebackground = () => {
           },
           modes: {
             push: {
-              quantity: 6,
+              quantity: 10,
             },
             repulse: {
               distance: 200,
-              duration: 0.4,
+              duration: 0.6,
             },
           },
         },
         particles: {
           color: {
-            value: "#ffffff",
+            value: "#111111",
           },
           links: {
-            color: "#ffffff",
+            color: "#111111",
             distance: 150,
             enable: true,
             opacity: 0.5,
@@ -80,7 +80,7 @@ const Particlebackground = () => {
               default: OutMode.out,
             },
             random: false,
-            speed: 6,
+            speed: 3,
             straight: false,
           },
           number: {

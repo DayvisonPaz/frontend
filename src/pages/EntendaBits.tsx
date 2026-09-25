@@ -5,7 +5,7 @@ function EntendaBits(props:any) {
   return (
     <>
     <Header></Header>
-      <div className="text-justify flex items-center flex-col mt-11 w-[90%] m-auto 2xl:w-[60%] xl:w-[60%]"> 
+      <div className="text-justify flex items-center flex-col mt-11 w-[90%] m-auto 2xl:w-[60%] xl:w-[60%] text-black"> 
       
       <div className="prose max-w-3xl mx-auto p-6">
       <h1>Entendendo Bits</h1>

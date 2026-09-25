@@ -3,7 +3,7 @@ import Comments from "../comments";
 function MecanismoGoogle(props: any) {
   return (
     <>
-      <div className="prose text-justify prose-lg text-justify flex flex-col mt-28 w-[90%] m-auto 2xl:w-[60%] xl:w-[60%]">
+      <div className="prose text-justify prose-lg text-justify flex flex-col mt-28 w-[90%] m-auto 2xl:w-[60%] xl:w-[60%] text-black">
         
         <img
           src="https://ik.imagekit.io/yfgcubiem1/mecanismo%20de%20busca/old%20google.avif?updatedAt=1753831831192"

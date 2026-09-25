@@ -4,7 +4,7 @@ function Idiolatria(props:any) {
 
   return (
     <>
- <div className="text-justify flex items-center flex-col mt-28 w-[90%] text-xl m-auto 2xl:w-[60%] xl:w-[60%]">
+ <div className="text-justify flex items-center flex-col mt-28 w-[90%] text-xl m-auto 2xl:w-[60%] xl:w-[60%] text-black">
 <img src="https://ik.imagekit.io/yfgcubiem1/idiolatria/idiolatria%20%20(1).png?updatedAt=1753827465007" alt="" />
 <h1 className="bold text-3xl font-bold my-4">Idiolatria</h1>
 

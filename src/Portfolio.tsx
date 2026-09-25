@@ -2,7 +2,12 @@ import Header from './header'
 
 import Particlebackground from './pages/particlesbackground'
 import Typewriter from "typewriter-effect"
-
+const socials = [
+  { name: "GitHub", href: "https://github.com/DayvisonPaz" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/dayvison-da-paz/" },
+  { name: "Instagram", href: "https://www.instagram.com/dayvisonapz/" },
+  { name: "Chess.com", href: "https://www.chess.com/member/dayv1son" },
+];
 function Portfolio(data:any){
   const posts = data.data[0]
 return(< >
@@ -20,11 +25,11 @@ return(< >
             <img className="h-80 w-80 object-cover lg:w-[500px] lg:h-[500px] rounded-full" src="https://avatars.githubusercontent.com/u/88006182?s=400&u=8eb7a6e54da1a0493ada2d457aba04a322b55f6c&v=4" alt="" />
         </div>
         <div className="order-2 lg:order-2  flex flex-col justify-center lg:items-start text-center sm:text-left ">
-            <p className="mt-2 text-3xl md:text-lg sm:text-sm text-white">Seja Bem vindo </p>
-            <p className="text-4xl font-bold md:text-7xl  text-white ">Eu sou
+            <p className="mt-2 text-3xl md:text-lg sm:text-sm text-black">Seja Bem vindo </p>
+            <p className="text-4xl font-bold md:text-7xl  text-black ">Eu sou
                 <span className="text-orange-600"> Dayvison</span>.
             </p>
-            <p className="text-3xl  md:text-6xl text-white">E tambem sou {
+            <p className="text-3xl  md:text-6xl text-black">E tambem sou {
                 <Typewriter
                 options={{
                   strings: ['Programador', 'Escritor',"Analista de Dados","Desenvolvedor"],
@@ -35,7 +40,7 @@ return(< >
               />} <span>
                             
                         </span></p>
-            <p className="mt-2 lg:text-3xl md:text-lg sm:text-sm  text-white "></p>
+            <p className="mt-2 lg:text-3xl md:text-lg sm:text-sm  text-black "></p>
            
 
           
@@ -51,11 +56,11 @@ return(< >
 <section className=" m-auto w-4/5 backdrop-blur-none flex items-center justify-center">
 
 <ol >
-  <h1 className='text-center text-white text-3xl  font-bold'>Sobre Mim</h1>
+  <h1 className='text-center text-black text-3xl  font-bold'>Sobre Mim</h1>
   <li className="border-l-2 border-blue-600">
     <div className="md:flex flex-start">
       <div className="bg-blue-600 w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
-        <svg aria-hidden="true" focusable="false" data-prefix="fas" className="text-white w-3 h-3" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" className="text-black w-3 h-3" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
           <path fill="currentColor" d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm64-192c0-8.8 7.2-16 16-16h288c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16v-64zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"></path>
         </svg>
       </div>
@@ -71,7 +76,7 @@ return(< >
   <li className="border-l-2 border-green-600">
     <div className="md:flex flex-start">
       <div className="bg-green-600 w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
-        <svg aria-hidden="true" focusable="false" data-prefix="fas" className="text-white w-3 h-3" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" className="text-black w-3 h-3" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
           <path fill="currentColor" d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm64-192c0-8.8 7.2-16 16-16h288c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16v-64zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"></path>
         </svg>
       </div>
@@ -87,7 +92,7 @@ return(< >
  <li className="border-l-2 border-blue-600">
     <div className="md:flex flex-start">
       <div className="bg-blue-600 w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
-        <svg aria-hidden="true" focusable="false" data-prefix="fas" className="text-white w-3 h-3" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" className="text-black w-3 h-3" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
           <path fill="currentColor" d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm64-192c0-8.8 7.2-16 16-16h288c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16v-64zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"></path>
         </svg>
       </div>
@@ -107,11 +112,11 @@ return(< >
 <section className="shadow-2xl m-auto w-4/5 backdrop-blur-none">
 
     <div className="w-full h-full py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-  <section className=" md:px-8 xl:px-20 text-white bg-primary flex items-center">
+  <section className=" md:px-8 xl:px-20 text-black bg-primary flex items-center">
   <div className="flex flex-col md:flex-row items-center md:items-start gap-16">
    
     <div className="w-full md:w-1/2 relative p-6 sm:px-28 md:p-0">
-      <div className="text-white p-6 pl-2 pr-20 sm:pl-10 lg:pr-20">
+      <div className="text-black p-6 pl-2 pr-20 sm:pl-10 lg:pr-20">
        
         <div
           className="absolute -left-4 top-16 sm:left-16 top-20 sm:top-24 md:-left-12 xl:-left-16 md:top-16 xl:top-24 rotate-[-90deg] text-sm tracking-widest flex flex-row justify-start gap-2">
@@ -130,7 +135,7 @@ return(< >
        Maior uso de ferramentas para desenvolvimento Web, frontend, backend e analise de dados
       </p>
       <span className="py-4 px-2 space-x-2 rounded-lg bg-secondary shadow-lg">
-  <span className="rounded-lg px-4 py-2 bg-blue-500 text-white transition-all duration-300">
+  <span className="rounded-lg px-4 py-2 bg-blue-500 text-black transition-all duration-300">
     Skills
   </span>
   <span className="rounded-lg px-4 py-2 bg-transparent text-gray-300 transition-all duration-300">
@@ -281,28 +286,28 @@ return(< >
 
 
 <section>
-<div className="shadow-2xl m-auto w-4/5 backdrop-blur-none text-white ">
+<div className="shadow-2xl m-auto w-4/5 backdrop-blur-none text-black ">
 <section className="">
   <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
       <div className="max-w-screen-md mb-8 lg:mb-16">
-          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Conheça alguns de meus projetos</h2>
+          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-black">Conheça alguns de meus projetos</h2>
           <p className="text-gray-500 sm:text-xl dark:text-gray-400">Todos esse projetos foram criados inteiramente por mim, cada um com sua função especifica  </p>
       </div>
       <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
           <div>
             <img src="https://ik.imagekit.io/yfgcubiem1/blog/movielist%20print.jpg?updatedAt=1753783747914" alt="" />
-             <a href='https://github.com/DayvisonPaz/frontend-movielist' ><h3 className="mb-2 text-center text-xl font-bold dark:text-white">Movielist</h3></a> 
+             <a href='https://github.com/DayvisonPaz/frontend-movielist' ><h3 className="mb-2 text-center text-xl font-bold dark:text-black">Movielist</h3></a> 
              
           </div>
           <div>
             <img src="https://ik.imagekit.io/yfgcubiem1/blog/dayvison%20blog%20print.png?updatedAt=1753783747871" alt="" />
-             <a href="/"><h3 className="mb-2 text-xl text-center font-bold dark:text-white">Portfolio</h3></a> 
+             <a href="/"><h3 className="mb-2 text-xl text-center font-bold dark:text-black">Portfolio</h3></a> 
              
           </div>
           
           <div>
             <img src="https://ik.imagekit.io/yfgcubiem1/blog/replit%20python.png?updatedAt=1753783747810" alt="" />
-              <a href="https://drive.google.com/drive/folders/1dUHtGPOU2TSh-gWvxD8jQzlMrH5aOjd3"><h3 className="mb-2 text-center text-xl font-bold dark:text-white">Replit</h3></a>
+              <a href="https://drive.google.com/drive/folders/1dUHtGPOU2TSh-gWvxD8jQzlMrH5aOjd3"><h3 className="mb-2 text-center text-xl font-bold dark:text-black">Replit</h3></a>
              
           </div>
         
@@ -319,17 +324,17 @@ return(< >
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
        <section className="shadow-2xl m-auto w-4/5 backdrop-blur-none flex flex-col items-center justify-center">
         <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-          <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"> 
+          <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-black"> 
            <a className='text-blue-500' href="/vagante"> Meu Blog</a></h2>
           <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">Aqui você encontra reflexões, tutoriais práticos e ideias que conectam razão e lógica .
 <a className='text-blue-500' href="/vagante"> Veja Mais</a>
 
           </p>
       </div> 
-     {posts.length>0?posts.slice(-2).map((e:any)=>(<a href={'/'+e.route} key={e.post} className="m-5 w-[60vw] flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row  hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+     {posts.length>0?posts.slice(-2).map((e:any)=>(<a href={'/'+e.route} key={e.post} className="m-5 w-[60vw] flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row  hover:bg-gray-100 dark:border-gray-700 dark:bg-[#192127] dark:hover:bg-gray-700">
 <img className="object-cover  rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src={e.tumb} alt=""/>
 <div className="flex w-[60vw] flex-col justify-between p-4 leading-normal">
-  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{e.title}</h5>
+  <h5 className="mb-2 text-2xl font-bold tracking-tight text-white ">{e.title}</h5>
   <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{e.About}</p>
 </div>
 </a>
@@ -342,7 +347,7 @@ return(< >
 
 
 
-<section className="shadow-2xl  text-white  backdrop-blur-sm mb-[-20px] mt-7">
+<section className="shadow-2xl  text-black  backdrop-blur-sm mb-[-20px] mt-7">
 <footer className="flex flex-col space-y-10 justify-center ">
 
   
@@ -351,7 +356,7 @@ return(< >
         <ul className="flex justify-center mt-5 space-x-5">
    
     <li>
-        <a href="https://www.instagram.com/dayvisonapz/" className="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
+        <a href="https://www.instagram.com/dayvisonapz/" className="text-gray-500 hover:text-gray-900 dark:hover:text-black dark:text-gray-400">
             <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path fill-rule="evenodd"
                     d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
@@ -361,7 +366,7 @@ return(< >
     </li>
   
     <li>
-        <a href="https://github.com/DayvisonPaz" className="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
+        <a href="https://github.com/DayvisonPaz" className="text-gray-500 hover:text-gray-900 dark:hover:text-black dark:text-gray-400">
             <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path fill-rule="evenodd"
                     d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
@@ -370,14 +375,14 @@ return(< >
         </a>
     </li>
     <li>
-        <a href="https://www.linkedin.com/in/dayvison-da-paz/" className="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
+        <a href="https://www.linkedin.com/in/dayvison-da-paz/" className="text-gray-500 hover:text-gray-900 dark:hover:text-black dark:text-gray-400">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256">
 <g fill="currentColor" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"><g transform="scale(5.12,5.12)"><path d="M41,4h-32c-2.76,0 -5,2.24 -5,5v32c0,2.76 2.24,5 5,5h32c2.76,0 5,-2.24 5,-5v-32c0,-2.76 -2.24,-5 -5,-5zM17,20v19h-6v-19zM11,14.47c0,-1.4 1.2,-2.47 3,-2.47c1.8,0 2.93,1.07 3,2.47c0,1.4 -1.12,2.53 -3,2.53c-1.8,0 -3,-1.13 -3,-2.53zM39,39h-6c0,0 0,-9.26 0,-10c0,-2 -1,-4 -3.5,-4.04h-0.08c-2.42,0 -3.42,2.06 -3.42,4.04c0,0.91 0,10 0,10h-6v-19h6v2.56c0,0 1.93,-2.56 5.81,-2.56c3.97,0 7.19,2.73 7.19,8.26z"></path></g></g>
 </svg>
         </a>
     </li>
     <li>
-        <a href="https://www.chess.com/member/dayv1son" className="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
+        <a href="https://www.chess.com/member/dayv1son" className="text-gray-500 hover:text-gray-900 dark:hover:text-black dark:text-gray-400">
            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256">
 <g fill="currentColor" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" ><g transform="scale(8.53333,8.53333)"><path d="M22.07,21.034l-1.42,-1.42c-1.83,-1.83 -2.99,-4.19 -3.36,-6.72h2.04v-2.16l-2.15,-1.08h-0.01v-0.58c1.3,-0.75 2.16,-2.14 2.16,-3.74c0,-2.39 -1.93,-4.32 -4.32,-4.32c-2.39,0 -4.32,1.93 -4.32,4.32c0,1.6 0.86,2.99 2.16,3.74v0.58l-2.16,1.08v2.16h2.04c-0.37,2.53 -1.53,4.89 -3.36,6.72l-1.42,1.42c-1.01,1.01 -1.58,2.38 -1.58,3.81v2.09c5.5,1.47 11.25,1.48 17.28,0v-2.09c0,-1.43 -0.57,-2.8 -1.58,-3.81zM14.14,4.134c-0.83,0.83 -1.84,1.17 -2.25,0.76c-0.42,-0.42 -0.08,-1.43 0.75,-2.26c0.82,-0.82 1.83,-1.16 2.25,-0.74c0.41,0.41 0.07,1.42 -0.75,2.24z"></path></g></g>
 </svg>
